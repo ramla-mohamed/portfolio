@@ -71,6 +71,11 @@ html {
   text-transform: none;
 }
 
+.downward a:active{
+  text-decoration: none;
+  text-transform: none;
+}
+
 
 #page-1{
   height:1000px;
