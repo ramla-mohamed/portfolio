@@ -32,7 +32,8 @@
     </div>
     </nav>
     <div class="container justify-content-end px-0">
-      <h1 class="display-1 text-center"></h1>
+      <h1 class="display-1" id="cmd"> </h1>
+
       <p class="lead">I’m a US based <span class="red">junior web developer</span> and <span class="red">web designer</span>, aspiring UI/UX engineer</p>
     </div>
 
@@ -41,7 +42,7 @@
 <div id="page-2">
 
 <div class="container justify-content-start">
-  <h1 class="display-4 ">About</h1>
+  <h1 class="display-4 pb-2">About</h1>
   <hr align="left">
   <p class="pt-4">I’m a self taught <span class="red">web developer</span> and <span class="red">web designer</span>, I always had a passion for <span class="red">design</span>. I found web developement and web design to be a create outlet to express my creative vision. While I am currently a student at the University of Minnesota working towards a BA in Computer Science I spend the rest of my time honing my skills.
 </p>
@@ -51,13 +52,29 @@
 
 <h1 class="display-4 ">My skills</h1>
 <hr align="left">
+<div class="row justify-content-start">
+  <div class="col-6">
+    <ul>
+      <li class="html">HTML</li>
+      <li class="css">CSS</li>
+      <li class="javascript">Javascript</li>
+    </ul>
+  </div>
+  <div class="col-6">
+    <ul>
+      <li class="repdesign">Responsive Design</li>
+      <li class="git">Git</li>
+      <li class="webdesign">Web Design</li>
+    </ul>
+  </div>
+</div>
 </div>
 
 </div>
 
 <div id="page-3">
   <div class="container">
-    <h1 class="display-4 pt-5 mt-5 pb-2">Projects</h1>
+    <h1 class="display-4 pt-5 pb-2">Projects</h1>
     <hr align="left">
     <div class="row  pt-5 justify-content-start">
       <div class="col-md-5 col-sm-4 mr-5 pb-3">
@@ -125,6 +142,18 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script type="text/javascript">
+var speed = 100;
+var i=0;
+var txt = "> I’m Ramla Mohamed";
+function cmdPrompt(){
+  if(i<txt.length){
+    document.getElementById("cmd").innerHTML+=txt.charAt(i);
+    i++;
+    setTimeout(cmdPrompt,speed);
+  }
+}
+cmdPrompt();
+</script>
   </body>
 </html>
