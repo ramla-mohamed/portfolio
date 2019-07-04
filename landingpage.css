@@ -2,9 +2,14 @@
 body{
   font-family: "Rubik";
   letter-spacing: 0.1rem;
+    height: 100%;
+    overflow: auto;
 
 
 }
+
+
+
 
 .navbar .nav-link{
   color:#616161;
@@ -142,6 +147,8 @@ body{
 
 html {
   scroll-behavior: smooth;
+   overflow: hidden;
+    height: 100%;
 }
 
 #page-3{
