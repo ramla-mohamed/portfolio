@@ -26,7 +26,7 @@ body{
 
 }
 #page-2{
-    height:500px;
+    height:600px;
 }
 
 #page-2 .container h1{
@@ -46,8 +46,8 @@ body{
 #page-2 .background-image{
   z-index: -1;
   width: 100%;
-  height:500px;
-  background-image: url("file:///Users/ramlamohamed/Downloads/photo-1477346611705-65d1883cee1e.jpeg");
+  height:600px;
+  background-image: url("photo-1477346611705-65d1883cee1e.jpeg");
   background-color: #16060b;
   background-blend-mode: multiply;
   position: absolute;
@@ -114,14 +114,15 @@ body{
 #page-5 .background-image{
   z-index: -1;
   width: 100%;
-  height:500px;
-  background-image: url("file:///Users/ramlamohamed/Downloads/photo-1477346611705-65d1883cee1e.jpeg");
+  height:600px;
+  background-image: url("photo-1477346611705-65d1883cee1e.jpeg");
   background-color: #16060b;
   background-blend-mode: multiply;
   position: absolute;
 }
 
 #page-5 h1{
+  padding-top: 10%;
     color: white;
     font-weight: bold;
     letter-spacing: 0.5rem;
