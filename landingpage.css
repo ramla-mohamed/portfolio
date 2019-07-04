@@ -24,6 +24,7 @@ body{
   color:white;
   font-size:13px;
 
+
 }
 #page-2{
     height:600px;
@@ -56,13 +57,16 @@ body{
 .container .lead{
   color:white;
 }
-.downward i{
-  padding-top:350px;
+.downward .btn{
   color: white;
+  margin-top: 5%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .downward a:hover{
-  color:orange;
   text-decoration: none;
   text-transform: none;
 }
